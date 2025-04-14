@@ -6,7 +6,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
 
     h1 {
         color: #6c6881;
@@ -20,8 +20,6 @@ span {
     padding-left: 18px;
     font-weight: bold;
 }
-
-
 
 .password-box {
     display: flex;
@@ -61,20 +59,21 @@ span {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     border-radius: 2px;
     width: 350px;
     height: 400px;
     margin: 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    gap: 60px;
 
 }
-
 
 .checkbox-group {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
   
   .checkbox-group label {
