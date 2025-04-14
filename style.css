@@ -74,6 +74,7 @@ span {
     flex-direction: column;
     gap: 10px;
     margin-bottom: 40px;
+    margin-right: 35px;
   }
   
   .checkbox-group label {
