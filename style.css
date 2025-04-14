@@ -1,0 +1,124 @@
+body {
+    background-color: #0e0d13;
+    color: #e0dfe4;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    h1 {
+        color: #6c6881;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+}
+
+
+span {
+    padding-left: 18px;
+    font-weight: bold;
+}
+
+
+
+.password-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2a2a35;
+    padding: 10px;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    position: relative;
+    width: 330px;
+  }
+
+  #password {
+    overflow-wrap: break-word;
+    flex: 1;
+  }
+
+  #copy-btn {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-bottom: 2px;
+    transition: color 0.3s;
+  }
+
+
+
+.container {
+    background-color: #24232b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    width: 350px;
+    height: 400px;
+    margin: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 80px;
+  }
+  
+  .checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .checkbox-group input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #a4ffab;
+    background-color: #24232b;
+    cursor: pointer;
+    position: relative;
+    
+  }
+  
+  .checkbox-group input[type="checkbox"]:checked::before {
+    content: '✔';
+    color: #24232b;
+    background-color: #a4ffab;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  .generate-btn {
+    color: #e0dfe4;
+    background-color: #24232b;
+    border: #a4ffab 2px solid;
+    border-radius: 3px;
+    padding: 15px 100px;
+    cursor: pointer;
+  }
+
+  .generate-btn:hover {
+    background-color: #a4ffab;
+    color: #24232b;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
