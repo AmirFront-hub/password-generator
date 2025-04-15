@@ -1,4 +1,5 @@
 let generateButton = document.getElementById("generate-button");
+let copyButton = document.getElementById("copy-btn");
 let passwordLength = 15;
 
 const uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
@@ -10,6 +11,8 @@ const uppercaseCheckbox = document.getElementById("uppercase");
 const lowercaseCheckbox = document.getElementById("lowercase");
 const numbersCheckbox = document.getElementById("numbers");
 const symbolsCheckbox = document.getElementById("symbols");
+
+
 
 function generatePassword() {
     let charactersPool = [];
@@ -42,4 +45,15 @@ function generatePassword() {
 generateButton.addEventListener("click", function () {
     const password = generatePassword();
     document.getElementById("password").textContent = password;
+});
+
+copyButton.addEventListener("click", async function () {
+    const passwordText = document.getElementById("password").textContent;
+    if (passwordText !== "Select one option!" && passwordText !== "Generate Your Password!") {
+        await navigator.clipboard.writeText(passwordText);
+        copyButton.textContent = "✔️";
+        setTimeout(() => {
+            copyButton.textContent = "📋";
+        }, 1000);
+    }
 });

@@ -37,6 +37,7 @@ span {
   }
 
   #password {
+    margin-top: 2px;
     overflow-wrap: break-word;
     flex: 1;
   }
